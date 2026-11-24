@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a09">
+  <meta name="description" content="LEE JONG UNG — AI Content Creator. AI와 영상 언어를 결합한 이종웅의 원페이지 포트폴리오.">
+  <meta property="og:title" content="LEE JONG UNG — AI Content Creator">
+  <meta property="og:description" content="기술로 상상을 확장하고, 연출로 이야기를 완성합니다.">
+  <meta property="og:image" content="https://lee-jong-ung-film-portfolio.dark-seed-8573.chatgpt.site/assets/film-06.jpg">
+  <title>LEE JONG UNG — AI Content Creator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/lenis.css">
+  <link rel="icon" type="image/svg+xml" href="assets/robot-logo.svg">
+  <link rel="stylesheet" href="styles.css?v=display-modes-1">
+  <script>try{const p=JSON.parse(localStorage.getItem('display-settings')||'{}');document.documentElement.dataset.theme=p.theme==='day'?'day':'night';document.documentElement.style.setProperty('--screen-dim',String((100-Math.max(60,Math.min(100,Number(p.brightness)||100)))/100));}catch(e){}</script>
+  <script defer src="vendor/gsap.min.js"></script>
+  <script defer src="vendor/ScrollTrigger.min.js"></script>
+  <script defer src="vendor/lenis.min.js"></script>
+  <script defer src="app.js?v=display-modes-1"></script>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header" id="site-header">
+    <a class="site-name" href="#home" data-scroll aria-label="이종웅 포트폴리오 홈"><img class="site-logo" src="assets/robot-logo.svg" alt="" width="46" height="46"><span>LEE JONG UNG<span class="name-dot">.</span></span></a>
+    <nav class="desktop-nav" aria-label="주 메뉴">
+      <a href="#home" data-scroll>Home</a>
+      <a href="#portfolio" data-scroll>Portfolio</a>
+      <a href="#profile" data-scroll>Profile</a>
+      <a href="#skill" data-scroll>Skill</a>
+      <a href="#contact" data-scroll class="nav-contact">Contact <span aria-hidden="true">↗</span></a>
+    </nav>
+    <details class="display-settings">
+      <summary aria-label="화면 모드와 밝기 설정">☼ <span>화면</span></summary>
+      <div class="display-panel">
+        <p>화면 모드</p>
+        <div class="theme-options"><button type="button" data-theme-choice="night" aria-pressed="true">☾ NIGHT</button><button type="button" data-theme-choice="day" aria-pressed="false">☼ DAY</button></div>
+        <label for="screen-brightness">밝기 <output id="brightness-value" for="screen-brightness">100%</output></label>
+        <input id="screen-brightness" type="range" min="60" max="100" step="5" value="100">
+      </div>
+    </details>
+    <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="모바일 메뉴">
+      <a href="#home" data-scroll>Home</a>
+      <a href="#portfolio" data-scroll>Portfolio</a>
+      <a href="#profile" data-scroll>Profile</a>
+      <a href="#skill" data-scroll>Skill</a>
+      <a href="#contact" data-scroll>Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <video autoplay muted loop playsinline preload="metadata" poster="assets/film-06.jpg">
+          <source src="assets/hero-reel.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-content shell">
+        <div class="hero-kicker"><span class="gold-line"></span> FILMMAKER & VISUAL STORYTELLER <span class="kicker-index">/ 2026</span></div>
+        <h1 id="hero-title" class="hero-title"><span class="title-mask"><span class="title-word">AI Content</span></span><span class="title-mask"><span class="title-word title-outline">Creator</span></span></h1>
+        <div class="hero-lower">
+          <p class="hero-copy">기술로 상상을 확장하고,<br>연출로 이야기를 완성합니다.</p>
+          <a class="circle-link" href="#portfolio" data-scroll aria-label="작품 보기"><span>EXPLORE<br>WORK</span><span class="circle-arrow" aria-hidden="true">↘</span></a>
+        </div>
+      </div>
+      <div class="hero-bottom shell"><span>LEE JONG UNG / VISUAL PORTFOLIO</span><span>SCROLL TO EXPLORE <b aria-hidden="true">↓</b></span></div>
+    </section>
+
+    <section class="manifesto section-pad" id="vision">
+      <div class="shell manifesto-layout">
+        <div class="section-index" data-reveal><span class="index-line"></span> 01 / THE VISION</div>
+        <div class="manifesto-main">
+          <p class="manifesto-overline" data-reveal>THE HUMAN EYE. THE NEW TOOL.</p>
+          <h2 data-reveal>상상은 더 멀리,<br><span class="heading-accent">이야기는 더 깊이.</span></h2>
+          <div class="manifesto-bottom" data-reveal>
+            <span class="manifesto-mark">✦</span>
+            <p>AI가 넓힌 가능성 위에 장면의 감정과 리듬을 더합니다. 단편영화, 애니메이션, 광고를 오가며 기억에 남는 화면을 만듭니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio section-pad" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="shell">
+        <div class="section-topline" data-reveal><span>02 / SELECTED WORKS</span><span>SCROLL TO DISCOVER / 08 PROJECTS</span></div>
+        <div class="section-heading" data-reveal>
+          <h2 id="portfolio-title">Selected <span class="heading-accent">works.</span></h2>
+          <p>각 작품을 눌러 영상을 감상하고, 기획안에서 제작 의도를 확인할 수 있습니다.</p>
+        </div>
+        <div class="filters" role="group" aria-label="작품 종류 필터">
+          <button type="button" class="filter active" data-filter="all" aria-pressed="true">All works <span>08</span></button>
+          <button type="button" class="filter" data-filter="film" aria-pressed="false">Film</button>
+          <button type="button" class="filter" data-filter="commercial" aria-pressed="false">Commercial</button>
+        </div>
+        <div class="work-grid" id="work-grid"></div>
+      </div>
+    </section>
+
+    <section class="profile section-pad" id="profile" aria-labelledby="profile-title">
+      <div class="shell profile-layout">
+        <div class="profile-copy">
+          <div class="section-index dark-index" data-reveal><span class="index-line"></span> 03 / THE PERSON</div>
+          <p class="profile-overline" data-reveal>THE MIND BEHIND THE FRAME</p>
+          <h2 id="profile-title" data-reveal>Creative<br><span class="heading-accent">by instinct.</span></h2>
+          <p class="profile-lead" data-reveal>안녕하세요, 이종웅입니다.<br>장면에 감정을 담고, 새로운 기술을 이야기의 언어로 바꾸는 영상 작업을 합니다.</p>
+          <p class="profile-detail" data-reveal>일상 드라마부터 사극 액션, 애니메이션과 광고 콘셉트까지. 서로 다른 형식에서 하나의 질문을 이어갑니다. 어떻게 해야 한 장면이 오래 남을까.</p>
+          <a href="#contact" class="text-link" data-scroll data-reveal>LET'S CONNECT <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="skill section-pad" id="skill" aria-labelledby="skill-title">
+      <div class="shell">
+        <div class="section-topline" data-reveal><span>04 / CREATIVE PRACTICE</span><span>HOW THE WORK COMES TO LIFE</span></div>
+        <div class="skill-heading" data-reveal><h2 id="skill-title">Crafting what<br><span class="heading-accent">comes next.</span></h2><p>형식은 달라도 기준은 같습니다.<br>이야기를 선명하게 전하는 화면.</p></div>
+        <div class="toolkit" aria-labelledby="toolkit-title">
+          <div class="toolkit-heading" data-reveal><span>THE TOOLKIT</span><h3 id="toolkit-title">Tools behind the vision.</h3></div>
+          <dl class="toolkit-list">
+            <div class="toolkit-row" data-reveal><dt>LLM &amp; Agent</dt><dd>ChatGPT (CODEX), Gemini (Antigravity), Claude</dd></div>
+            <div class="toolkit-row" data-reveal><dt>Creative AI</dt><dd>Seedance, Kling, Grok, Flow, MiniMax, Higgsfield, Midjourney, ChatGPT image2.5, Nano Banana2.1</dd></div>
+            <div class="toolkit-row" data-reveal><dt>TTS</dt><dd>Elevenlabs, Typecast, Google AI Studio, Vrew</dd></div>
+            <div class="toolkit-row" data-reveal><dt>Music</dt><dd>SUNO</dd></div>
+            <div class="toolkit-row" data-reveal><dt>Editor</dt><dd>Premiere Pro, Capcut</dd></div>
+            <div class="toolkit-row" data-reveal><dt>Workflow AI</dt><dd>ComfyUI</dd></div>
+            <div class="toolkit-row" data-reveal><dt>Vibe Coding</dt><dd>Antigravity, Codex, Cowork, Three.js, Previs</dd></div>
+          </dl>
+        </div>
+        <div class="practice-heading" data-reveal>CREATIVE PRACTICE</div>
+        <div class="skill-list">
+          <article class="skill-row" data-reveal><span class="skill-index">01</span><h3>Film & Narrative</h3><p>짧은 러닝타임 안에 인물과 감정을 응축하는 영상 서사</p><span class="skill-symbol" aria-hidden="true">↗</span></article>
+          <article class="skill-row" data-reveal><span class="skill-index">02</span><h3>Commercial Vision</h3><p>브랜드의 콘셉트를 강한 한 장면으로 표현하는 광고 영상</p><span class="skill-symbol" aria-hidden="true">↗</span></article>
+          <article class="skill-row" data-reveal><span class="skill-index">03</span><h3>Visual Storytelling</h3><p>새로운 제작 도구와 연출 감각을 결합한 시각적 실험</p><span class="skill-symbol" aria-hidden="true">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
+      <div class="contact-halo" aria-hidden="true"></div>
+      <div class="shell contact-content">
+        <div class="section-topline" data-reveal><span>05 / GET IN TOUCH</span><span>THE NEXT STORY STARTS HERE</span></div>
+        <p class="contact-prelude" data-reveal>HAVE A STORY IN MIND?</p>
+        <h2 id="contact-title" data-reveal>Let's make<br><span class="heading-accent">it matter.</span></h2>
+        <div class="contact-bottom" data-reveal>
+          <p>함께 만들고 싶은 이야기가 있다면<br>편하게 연락해 주세요.</p>
+          <div class="contact-links">
+            <a href="mailto:whddnd2@naver.com"><span>EMAIL</span><strong>whddnd2@naver.com</strong><b aria-hidden="true">↗</b></a>
+            <a href="https://www.instagram.com/casting_lee/" target="_blank" rel="noopener noreferrer"><span>INSTAGRAM</span><strong>@casting_lee</strong><b aria-hidden="true">↗</b></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-inner"><span>© <span id="year">2026</span> LEE JONG UNG. ALL RIGHTS RESERVED.</span><button class="back-top" type="button" aria-label="맨 위로 이동">BACK TO TOP <span aria-hidden="true">↑</span></button></div></footer>
+
+  <dialog class="video-dialog" id="video-dialog" aria-label="작품 영상">
+    <div class="dialog-top"><div><span id="dialog-type"></span><h3 id="dialog-title"></h3></div><button type="button" class="dialog-close" aria-label="영상 닫기">×</button></div>
+    <video id="player" controls playsinline preload="none"></video>
+    <div class="dialog-bottom"><p id="dialog-description"></p><a id="dialog-plan" target="_blank" rel="noopener noreferrer">기획안 PDF 보기 <span aria-hidden="true">↗</span></a></div>
+  </dialog>
+</body>
+</html>
